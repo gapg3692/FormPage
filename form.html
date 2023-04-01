@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <title>Sing up</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <div class="left">
+          <div class="login">Let's do this!</div>
+          <div class="eula">
+            By logging in you agree to the ridiculously long terms that you
+            didn't bother to read
+          </div>
+        </div>
+        <div class="right">
+          <div class="form">
+            <form class="form-tag" action>
+              <div class="inputs first-Name">
+                <label for="first-Name">first name <span>*</span> </label>
+                <input
+                  id="first-Name"
+                  class="input"
+                  type="text"
+                  name="firstName"
+                  required
+                />
+              </div>
+              <span class="name-error error hidden">
+                ⚠ It should have a minimum of 2 characters, and cannot have
+                numbers.</span
+              >
+              <div class="inputs last-Name">
+                <label for="last-Name">last name <span>*</span></label>
+                <input
+                  id="last-Name"
+                  class="input"
+                  type="text"
+                  name="lastName"
+                  required
+                />
+              </div>
+              <span class="lastName-error error hidden"
+                >⚠ It should have a minimum of 2 characters, and cannot have
+                numbers.</span
+              >
+              <div class="inputs e-mail">
+                <label for="e-mail">email <span>*</span></label>
+                <input
+                  id="e-mail"
+                  class="input"
+                  type="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <span class="email-error error hidden"
+                >⚠ Email should be like this: "your@email.com".</span
+              >
+              <div class="inputs phone-number">
+                <label for="phone-number">phone number <span>*</span></label>
+                <input
+                  id="phone-number"
+                  class="input"
+                  type="text"
+                  name="phoneNumber"
+                  required
+                />
+              </div>
+              <span class="phone-error error hidden"
+                >⚠ Phone Number can only have numbers (6 minimum). e.g.
+                "+123456" or "123456"</span
+              >
+              <div class="inputs pass">
+                <label for="pass">password <span>*</span></label>
+                <input
+                  id="pass"
+                  class="input"
+                  type="password"
+                  name="password"
+                  required
+                />
+                <button id="password-button" class="icon-eyes" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    />
+                    <circle
+                      cx="256"
+                      cy="256"
+                      r="80"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-miterlimit="10"
+                      stroke-width="32"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon hidden"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M432 448a15.92 15.92 0 01-11.31-4.69l-352-352a16 16 0 0122.62-22.62l352 352A16 16 0 01432 448zM255.66 384c-41.49 0-81.5-12.28-118.92-36.5-34.07-22-64.74-53.51-88.7-91v-.08c19.94-28.57 41.78-52.73 65.24-72.21a2 2 0 00.14-2.94L93.5 161.38a2 2 0 00-2.71-.12c-24.92 21-48.05 46.76-69.08 76.92a31.92 31.92 0 00-.64 35.54c26.41 41.33 60.4 76.14 98.28 100.65C162 402 207.9 416 255.66 416a239.13 239.13 0 0075.8-12.58 2 2 0 00.77-3.31l-21.58-21.58a4 4 0 00-3.83-1 204.8 204.8 0 01-51.16 6.47zM490.84 238.6c-26.46-40.92-60.79-75.68-99.27-100.53C349 110.55 302 96 255.66 96a227.34 227.34 0 00-74.89 12.83 2 2 0 00-.75 3.31l21.55 21.55a4 4 0 003.88 1 192.82 192.82 0 0150.21-6.69c40.69 0 80.58 12.43 118.55 37 34.71 22.4 65.74 53.88 89.76 91a.13.13 0 010 .16 310.72 310.72 0 01-64.12 72.73 2 2 0 00-.15 2.95l19.9 19.89a2 2 0 002.7.13 343.49 343.49 0 0068.64-78.48 32.2 32.2 0 00-.1-34.78z"
+                      fill="none"
+                    />
+                    <path
+                      d="M256 160a95.88 95.88 0 00-21.37 2.4 2 2 0 00-1 3.38l112.59 112.56a2 2 0 003.38-1A96 96 0 00256 160zM165.78 233.66a2 2 0 00-3.38 1 96 96 0 00115 115 2 2 0 001-3.38z"
+                      fill="none"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="error-pass pass-error hidden">
+                <span class="eight-char">🗴</span> Minimum 8 characters
+                <br />
+                <span class="cap-char">🗴</span> at least one capital letter
+                <br />
+                <span class="special-char">🗴</span> At least one special
+                character <br />
+                <span class="number-char">🗴</span> At least one number
+                <br />
+              </div>
+
+              <div class="inputs confirm-pass">
+                <label for="confirm-pass"
+                  >confirm password <span>*</span></label
+                >
+                <input
+                  id="confirm-pass"
+                  class="input"
+                  type="password"
+                  name="confirmPassword"
+                  required
+                />
+                <button
+                  id="confirm-password-button"
+                  class="icon-eyes"
+                  type="button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    />
+                    <circle
+                      cx="256"
+                      cy="256"
+                      r="80"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-miterlimit="10"
+                      stroke-width="32"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon hidden"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M432 448a15.92 15.92 0 01-11.31-4.69l-352-352a16 16 0 0122.62-22.62l352 352A16 16 0 01432 448zM255.66 384c-41.49 0-81.5-12.28-118.92-36.5-34.07-22-64.74-53.51-88.7-91v-.08c19.94-28.57 41.78-52.73 65.24-72.21a2 2 0 00.14-2.94L93.5 161.38a2 2 0 00-2.71-.12c-24.92 21-48.05 46.76-69.08 76.92a31.92 31.92 0 00-.64 35.54c26.41 41.33 60.4 76.14 98.28 100.65C162 402 207.9 416 255.66 416a239.13 239.13 0 0075.8-12.58 2 2 0 00.77-3.31l-21.58-21.58a4 4 0 00-3.83-1 204.8 204.8 0 01-51.16 6.47zM490.84 238.6c-26.46-40.92-60.79-75.68-99.27-100.53C349 110.55 302 96 255.66 96a227.34 227.34 0 00-74.89 12.83 2 2 0 00-.75 3.31l21.55 21.55a4 4 0 003.88 1 192.82 192.82 0 0150.21-6.69c40.69 0 80.58 12.43 118.55 37 34.71 22.4 65.74 53.88 89.76 91a.13.13 0 010 .16 310.72 310.72 0 01-64.12 72.73 2 2 0 00-.15 2.95l19.9 19.89a2 2 0 002.7.13 343.49 343.49 0 0068.64-78.48 32.2 32.2 0 00-.1-34.78z"
+                      fill="none"
+                    />
+                    <path
+                      d="M256 160a95.88 95.88 0 00-21.37 2.4 2 2 0 00-1 3.38l112.59 112.56a2 2 0 003.38-1A96 96 0 00256 160zM165.78 233.66a2 2 0 00-3.38 1 96 96 0 00115 115 2 2 0 001-3.38z"
+                      fill="none"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span class="confirmPass-error error hidden">
+                ⚠ Password mismatch.</span
+              >
+            </form>
+            <div class="submit">
+              <button id="submit" type="button">Create account</button>
+              <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
